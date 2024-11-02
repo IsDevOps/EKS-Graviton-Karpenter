@@ -11,7 +11,7 @@ terraform {
     }
     
     kubectl = {
-      source  = "gavinbunney/kubectl"
+      source  = "gavinbunney/kubectl"  # Fixed the source from hashicorp to gavinbunney
       version = ">= 1.14.0"
     }
     
