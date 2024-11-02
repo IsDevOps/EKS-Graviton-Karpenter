@@ -68,7 +68,11 @@ jobs:
         uses: hashicorp/setup-terraform@v1
 
       - name: Terraform Init
-        run: terraform init
+        run: terraform init -upgrade
+
+      - name: Clear Cache
+        run: rm -rf .terraform
+        
 
       - name: Terraform Format
         run: terraform fmt -check

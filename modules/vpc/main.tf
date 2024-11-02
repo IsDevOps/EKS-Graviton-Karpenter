@@ -31,7 +31,7 @@ resource "aws_route_table" "main" {
   }
 
   tags = {
-    Name = "ken-route-table"
+    Name = "israel-route-table"
   }
 }
 
